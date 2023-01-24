@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Geral */
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(227, 88%, 17%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Titulo do projeto */
+h1 {
+    color: hsl(0, 0%, 91%);
+    margin-bottom: 20px;
+}
+/* Letras para o toque */
+.keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.key {
+    width: 80px;
+    height: 80px;
+
+    border: 4px groove rgb(150, 227, 6);
+    color: hsl(49, 67%, 50%);
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.key.active {
+    border: 5px groove hsl(60, 100%, 50%);
+    color: hsl(49, 67%, 50%);
+}
+/* Caixa para a composição */
+.composer {
+    width: 260px;
+    margin-top: 20px;
+}
+
+.composer #input {
+    width: 100%;
+    outline: none;
+    background-color: hsla(217, 81%, 27%, 0.786);
+    font-size: 17px;
+    color: hsla(0, 0%, 100%, 0.688);
+    padding: 10px 15px;
+
+    border: 3px groove rgb(136, 220, 18);
+    border-radius: 5px;
+}
+
+.composer #input::placeholder{
+    color: hsla(0, 0%, 100%, 0.688);
+}
+
+.composer #input:hover{
+    background-color: hsla(217, 77%, 33%, 0.678);
+}
+
+/* Botão de tocar */
+.composer button {
+    width: 100%;
+    height: 40px;
+    background: none;
+    border: 2px solid rgb(136, 220, 18);
+    
+    color: hsl(0, 0%, 91%);
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.composer button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* Informações */
+footer {
+    margin-top: 25px;
+    color: #FFF;
+    font-size: 15px;
+}
